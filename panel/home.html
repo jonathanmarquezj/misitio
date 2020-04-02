@@ -22,8 +22,19 @@
 
           <!-- LOGO -->
           <div class="widget-logo logo-in-side">
-            <h1><a href="index.html"><span class="logo-default visible-default-inline-block"><img src="assets/img/logo.png" alt="Proteus"></span><span class="logo-medium visible-compact-inline-block"><img src="assets/img/logo_medium.png" alt="Proteus" title="PROTEUS"></span>
-                <spanl class="logo-small visible-collapsed-inline-block"><img src="assets/img/logo_small.png" alt="Proteus" title="PROTEUS"></spanl></a></h1>
+            <h1>
+              <a href="index.html">
+                <span class="logo-default visible-default-inline-block">
+                  <img src="assets/img/logo.png" alt="Proteus">
+                </span>
+                <span class="logo-medium visible-compact-inline-block">
+                  <img src="assets/img/logo_medium.png" alt="Proteus" title="PROTEUS">
+                </span>
+              </a>
+                <a class="logo-small visible-collapsed-inline-block">
+                  <img src="assets/img/logo_small.png" alt="Proteus" title="PROTEUS">
+                </a>
+            </h1>
           </div>
           <!-- FIN LOGO -->
         </div>
@@ -32,7 +43,7 @@
         <div class="l-side-box">
           <nav class="navigation">
             <ul data-ason-type="menu" class="ason-widget">
-              <li><a href="blog/index.html"><i class="icon fa fa-dashboard"></i><span class="title">Blog</span></i></span><span class="info">-</span></a>
+              <li><a href="blog/index.html"><i class="icon fa fa-dashboard"></i><span class="title">Blog</span><span class="info">-</span></a>
               </li>
             </ul>
           </nav>
@@ -128,7 +139,7 @@
 
                     <!-- PERFIL -->
                     <div class="widget-profile profile-in-header">
-                      <button type="button" data-toggle="dropdown" class="btn dropdown-toggle"><span class="name">Jonathan Marquez</span><img src="assets/img/profile/profile.jpg"></button>
+                      <button type="button" data-toggle="dropdown" class="btn dropdown-toggle"><span class="name">Jonathan Marquez</span><img src="assets/img/profile/profile.jpg" alt="perfil"></button>
                       <ul role="menu" class="dropdown-menu">
                         <li><a href="page-profile.html"><i class="fa fa-user"></i>Perfil</a></li>
                         <li class="lock"><a href="page-lock-screen.html"><i class="fa fa-lock"></i>Salir</a></li>
@@ -272,26 +283,12 @@
     <script src="assets/js/basic/jquery-migrate.min.js"></script>
     <script src="assets/js/shared/jquery-ui.min.js"></script>
     <script src="assets/js/shared/jquery.ui.touch-punch.min.js"></script>
-    <script type="text/javascript">
-      $.widget.bridge('uitooltip', $.ui.tooltip);
-      $.widget.bridge('uibutton', $.ui.button);
-    </script>
     <!-- General-->
     <script src="assets/js/basic/modernizr.min.js"></script>
     <script src="assets/js/basic/bootstrap.min.js"></script>
     <script src="assets/js/shared/jquery.asonWidget.js"></script>
     <script src="assets/js/plugins/plugins.js"></script>
     <script src="assets/js/general.js"></script>
-    <script type="text/javascript">
-      var paceSemiGeneral = { restartOnPushState: false };
-      if (typeof paceSpecific != 'undefined'){
-      	var paceOptions = $.extend( {}, paceSemiGeneral, paceSpecific );
-      	paceOptions = paceOptions;
-      }else{
-      	paceOptions = paceSemiGeneral;
-      }
-      
-    </script>
     <script src="assets/js/plugins/pageprogressbar/pace.min.js"></script>
     <script src="assets/js/shared/classie.js"></script>
     <script src="assets/js/shared/jquery.cookie.min.js"></script>

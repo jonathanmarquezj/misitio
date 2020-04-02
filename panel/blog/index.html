@@ -22,7 +22,7 @@
           <!-- LOGO -->
           <div class="widget-logo logo-in-side">
             <h1><a href="../home.html"><span class="logo-default visible-default-inline-block"><img src="../assets/img/logo.png" alt="Proteus"></span><span class="logo-medium visible-compact-inline-block"><img src="../assets/img/logo_medium.png" alt="Proteus" title="PROTEUS"></span>
-                <spanl class="logo-small visible-collapsed-inline-block"><img src="../assets/img/logo_small.png" alt="Proteus" title="PROTEUS"></spanl></a></h1>
+                <span class="logo-small visible-collapsed-inline-block"><img src="../assets/img/logo_small.png" alt="Proteus" title="PROTEUS"></span></a></h1>
           </div>
           <!-- FIN LOGO -->
         </div>
@@ -31,7 +31,7 @@
         <div class="l-side-box">
           <nav class="navigation">
             <ul data-ason-type="menu" class="ason-widget">
-              <li class="active"><a href="index.html"><i class="icon fa fa-dashboard"></i><span class="title">Blog</span></i></span><span class="info">-</span></a>
+              <li class="active"><a href="index.html"><i class="icon fa fa-dashboard"></i><span class="title">Blog</span><span class="info">-</span></a>
               </li>
             </ul>
           </nav>
@@ -127,7 +127,7 @@
 
                     <!-- PERFIL -->
                     <div class="widget-profile profile-in-header">
-                      <button type="button" data-toggle="dropdown" class="btn dropdown-toggle"><span class="name">Jonathan Marquez</span><img src="../assets/img/profile/profile.jpg"></button>
+                      <button type="button" data-toggle="dropdown" class="btn dropdown-toggle"><span class="name">Jonathan Marquez</span><img src="../assets/img/profile/profile.jpg" alt="perfil"></button>
                       <ul role="menu" class="dropdown-menu">
                         <li><a href="page-profile.html"><i class="fa fa-user"></i>Perfil</a></li>
                         <li class="lock"><a href="page-lock-screen.html"><i class="fa fa-lock"></i>Salir</a></li>
@@ -143,7 +143,7 @@
         </header>
         <!-- FIN CABEZA -->
 
-        <div class="resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
+        <div class="resp-tab-content resp-tab-content-active" >
             <div class="l-row l-spaced-bottom">
                 <div class="l-box">
                     <div class="l-box-header">
@@ -161,25 +161,16 @@
                         </div>
                         <div id="dataTableId_wrapper" class="dataTables_wrapper">
                             <!-- TABLA -->
-                            <table id="dataTableId" cellspacing="0" width="100%" class="display dataTable" role="grid" aria-describedby="dataTableId_info" style="width: 100%;">
+                            <table id="dataTableId"  class="display dataTable" role="grid" style="width: 100%;">
                                 <thead>
-                                    <tr role="row">
+                                    <tr>
                                         <th rowspan="1" colspan="1">Titulo</th>
                                         <th rowspan="1" colspan="1">Categoria</th>
                     					<th rowspan="1" colspan="1">Fecha creacion</th>
                     					<th rowspan="1" colspan="1" style="width: 65px; text-align: center;">Estado</th>
-                    					<th id="impresion_invisible" rowspan="1" colspan="1" align="center" style="width: 180px;text-align:center;">Acciones</th>
+                    					<th rowspan="1" colspan="1" style="width: 180px;text-align:center;">Acciones</th>
                                     </tr>
                 				</thead>
-                				<tfoot>
-                                    <tr role="row">
-                                        <th rowspan="1" colspan="1">Titulo</th>
-                                        <th rowspan="1" colspan="1">Categoria</th>
-                                        <th rowspan="1" colspan="1">Fecha creacion</th>
-                                        <th rowspan="1" colspan="1" style="width: 65px; text-align: center;">Estado</th>
-    					               <th rowspan="1" colspan="1" align="center" style="width: 180px;text-align:center;">Acciones</th>
-                                    </tr>
-                				</tfoot>
                 				<tbody>
                 					<tr role="row" class="odd">
                                             <td class="sorting_1">Instalacion VPN</td>
@@ -188,26 +179,12 @@
                     					    <td style="text-align: center;" class="footable-visible footable-last-column" data-value="1">
                     						    <span title="Active" class="label label-success">Activado</span>
                     						</td>
-                                            <td id="impresion_invisible">
+                                            <td>
                         						<a href="blog_mod.php" class="btn btn-success btn-sm"><i class="fa fa-pencil"></i> Editar</a>
                                                 <a href="#" data-toggle="modal" data-target="#basicModalSi" class="btn btn-danger btn-sm"><i class="fa fa-times"></i> Eliminar</a>
                                             </td>
                 					</tr>
-                					<div id="basicModalSi" tabindex="-1" role="dialog" aria-labelledby="basicModalLabel" aria-hidden="true" class="modal fade">
-                					    <div class="modal-dialog">
-                    						<div class="modal-content">
-                    						    <div class="modal-header">
-                        							<button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
-                        							<h4 id="basicModalLabel" class="modal-title">Eliminar Entrada del Blog</h4>
-                    						    </div>
-                    						    <div class="modal-body">Está usted seguro de querer eliminar la entrada: </div>
-                    						    <div class="modal-footer">
-                        							<button style="float:left" type="button" data-dismiss="modal" class="btn btn-success">Cerrar</button>
-                        							<button type="button" onclick="document.location.href='index.php" class="btn btn-danger">Eliminar</button>
-                    						    </div>
-                    						</div>
-                					    </div>
-                					</div>
+                					
                 				</tbody>
                             </table>
                             <!-- FIN TABLA -->
@@ -227,6 +204,22 @@
         </footer>
         <!-- FIN PIE -->
     </section>
+  </section>
+    <div id="basicModalSi" tabindex="-1" role="dialog" aria-labelledby="basicModalLabel" aria-hidden="true" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                <h4 id="basicModalLabel" class="modal-title">Eliminar Entrada del Blog</h4>
+              </div>
+              <div class="modal-body">Está usted seguro de querer eliminar la entrada: </div>
+              <div class="modal-footer">
+                <button style="float:left" type="button" data-dismiss="modal" class="btn btn-success">Cerrar</button>
+                <button type="button" onclick="document.location.href='index.php" class="btn btn-danger">Eliminar</button>
+              </div>
+          </div>
+        </div>
+    </div>
     <script src="../assets/js/basic/jquery.min.js"></script>
     <script src="../assets/js/basic/jquery-migrate.min.js"></script>
     <script src="../assets/js/basic/modernizr.min.js"></script>
