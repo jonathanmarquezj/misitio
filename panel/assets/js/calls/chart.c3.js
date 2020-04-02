@@ -95,7 +95,7 @@ function runC3Spline(c3Chart){
         bindto: c3Chart,
         data: {
             columns: [
-                ['LG', 30, 200, 100, 400, 150, 250,],
+                ['LG', 30, 200, 100, 800, 150, 250,],
                 ['Nokia', 130, 100, 140, 200, 150, 50],
                 ['Samsung', 80, 50, 220, 170, 100, 400]
             ],

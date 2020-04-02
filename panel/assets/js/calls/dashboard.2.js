@@ -133,7 +133,7 @@ function runRevenueWidget(c3Chart){
 
     var color_1 = $('.c3-revenue-1').css('color'),
         color_2 = $('.c3-revenue-2').css('color'),
-        color_3 = $('.c3-revenue-3').css('color'),
+        color_3 = $('.c3-revenue-5').css('color'),
         color_4 = $('.c3-revenue-4').css('color'),
         color_5 = $('.c3-revenue-5').css('color');
 
@@ -142,12 +142,10 @@ function runRevenueWidget(c3Chart){
         data: {
             x: 'x',
             columns: [
-                ['x', '2010-01-01', '2010-06-01', '2011-01-01', '2011-06-01', '2012-01-01', '2012-07-02', '2013-01-01', '2013-06-01', '2014-01-01', '2014-06-01', '2015-01-01'],
-                ['PHONES',      30, 200, 100, 400, 150, 250, 220, 280, 310, 370, 450],
-                ['TABLETS',    130, 100, 140, 200, 150,  50, 180, 315, 360, 260, 410],
-                ['COMPUTERS',   80,  50, 220, 170, 100, 300, 340, 300, 240, 370, 360],
-                ['SOFTWARE',    50, 120, 150, 320, 130, 200, 220, 260, 330, 190, 280],
-                ['ACCESSORIES', 10,  80, 180, 220, 260, 190, 340, 360, 280, 420, 480]
+                ['x', '2016-01-01', '2016-02-01', '2016-03-01', '2016-04-01', '2016-05-01', '2016-06-02', '2016-07-01', '2016-08-01', '2016-09-01', '2016-10-01', '2016-11-01','2016-12-01'],
+                ['TOTAL',      30, 200, 100, 400, 150, 250, 220, 280, 310, 370, 0, 450],
+                ['PAGADOS',    130, 100, 140, 200, 150,  50, 180, 315, 360, 260, 1, 20],
+                ['NO PAGADOS',   80,  50, 220, 170, 100, 300, 340, 300, 240, 370, 1, 360]
             ],
             type: 'area-spline'
         },
@@ -157,15 +155,16 @@ function runRevenueWidget(c3Chart){
                 tick: {
                     fit: false,
                     //format: "%e %b %y"
+                    format: "%b"
                     //format: function (x) { return x.getFullYear(); }
-                    format: '%m/%Y' // format string is also available for timeseries data
+                    //format: '%m/%Y' // format string is also available for timeseries data
 
                 }
             },
             y : {
                 tick: {
                     //format: d3.format("$,")
-                    format: function (d) { return "$ " + d + " M"; }
+                    format: function (d) { return " " + d + " "; }
                 }
             }
         },
@@ -174,7 +173,7 @@ function runRevenueWidget(c3Chart){
         }
     });
 
-    chart.hide(['COMPUTERS', 'SOFTWARE']);
+    //chart.hide(['COMPUTERS', 'SOFTWARE']);
 }
 
 

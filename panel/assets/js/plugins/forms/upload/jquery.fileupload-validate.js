@@ -40,7 +40,7 @@
             always: true,
             // Options taken from the global options map:
             acceptFileTypes: '@',
-            maxFileSize: '@',
+            maxFileSize: '@disableValidation',
             minFileSize: '@',
             maxNumberOfFiles: '@',
             disabled: '@disableValidation'
@@ -70,8 +70,8 @@
 
             // Error and info messages:
             messages: {
-                maxNumberOfFiles: 'Maximum number of files exceeded',
-                acceptFileTypes: 'File type not allowed',
+                maxNumberOfFiles: 'Numero Maximo de Archivos Excedido',
+                acceptFileTypes: 'Tipo del Fichero no permitido',
                 maxFileSize: 'File is too large',
                 minFileSize: 'File is too small'
             }

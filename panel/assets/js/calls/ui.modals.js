@@ -135,7 +135,7 @@ $(function(){
 
     // Variables
 
-    var imageMagnific        = "#imageMagnific";
+    var imageMagnific        = ".imageMagnific";
     var multiImageMagnific   = "#multiImageMagnific";
     var iframeMagnific       = ".iframeMagnific";
     var formMagnific         = "#formMagnific";

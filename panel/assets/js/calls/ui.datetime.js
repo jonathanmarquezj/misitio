@@ -259,7 +259,7 @@ $(function(){
     runDaterangepicker(daterangepicker_4,'predefined');
     runDaterangepicker(daterangepicker_5,'dropdown');
 
-
+/*
     runDatetimepicker(datetimepicker_1,'basic');
     runDatetimepicker(datetimepicker_2,'us_format');
     runDatetimepicker(datetimepicker_3,'time');
@@ -276,5 +276,6 @@ $(function(){
     runClock(clock_1,'default');
     runClock(clock_2,'calendar');
     runClock(clock_3,'seconds');
+*/
 
 });

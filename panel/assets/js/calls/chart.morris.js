@@ -30,7 +30,7 @@ function runMorrisArea(morrisChart){
     Morris.Area({
       element: morrisChart,
       data: [
-        {x: '2012 Q4', y: 1, z: 2, a: 10},
+        {x: '2012 Q4', y: 10, z: -5, a: 10},
         {x: '2013 Q1', y: 3, z: 4, a: 2},
         {x: '2013 Q2', y: null, z: 1, a: 5},
         {x: '2013 Q3', y: 3, z: 6, a: 1},

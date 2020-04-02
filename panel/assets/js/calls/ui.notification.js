@@ -19,6 +19,7 @@
 /*
     runjGrowl
     ========================================================================== */
+
 function runjGrowl(obj){
 
     $(obj.elem).on( "click", function(e) {
@@ -54,10 +55,10 @@ function runjGrowl(obj){
 /*
     runToastr
     ========================================================================== */
+
 function runToastr(obj){
-
-
-    $(obj.elem).on( "click", function(e) {
+    
+    $(obj.elem).on( "click", function(e,mensaje) {
         e.preventDefault();
 
         toastr.options.closeButton = false;
@@ -99,9 +100,19 @@ function runToastr(obj){
                         toastr.options.hideEasing = 'easeInSine';
                         break;
                 }
-
-                toastr.warning('Basic toastr message with custom easing effect. Check out the easing plugin documentation for more info.');
-
+                
+                switch(obj.mensaje) {
+                    case 'error_foto':
+                        mensaje = "La imagen debe ser jpg o jpeg.";
+                        break;
+                    case 'error_titulo':
+                        mensaje = "El campo titulo es obligatorio.";
+                        break;
+                }
+                //toastr.warning('Basic toastr message with custom easing effect. Check out the easing plugin documentation for more info.');
+                
+                toastr.warning(mensaje);
+                
                 break;
 
             case 'animation':
@@ -170,7 +181,9 @@ $(function(){
         toastr_1 = {elem:"#toastr_1", type:"basic"},
         toastr_2 = {elem:"#toastr_2", type:"close"},
 
-        toastr_swing   = {elem:"#toastr_swing",   type:"easing", effect: 'swing'},
+        toastr_swing   = {elem:"#toastr_swing",   type:"easing", effect: 'swing', mensaje:  'nada'},
+        toastr_swing2  = {elem:"#toastr_swing_foto",   type:"easing", effect: 'swing', mensaje:  'error_foto'},
+        toastr_swing3  = {elem:"#toastr_swing_titulo",   type:"easing", effect: 'swing', mensaje:  'error_titulo'},
         toastr_linear  = {elem:"#toastr_linear",  type:"easing", effect: 'linear'},
         toastr_bounce  = {elem:"#toastr_bounce",  type:"easing", effect: 'bounce'},
         toastr_elastic = {elem:"#toastr_elastic", type:"easing", effect: 'elastic'},
@@ -209,8 +222,11 @@ $(function(){
 
     runToastr(toastr_1);
     runToastr(toastr_2);
-
+    
+    
     runToastr(toastr_swing);
+    runToastr(toastr_swing2);
+    runToastr(toastr_swing3);
     runToastr(toastr_linear);
     runToastr(toastr_bounce);
     runToastr(toastr_elastic);

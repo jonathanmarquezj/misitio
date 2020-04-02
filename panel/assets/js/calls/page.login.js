@@ -24,23 +24,21 @@
         form.validate({
             errorPlacement: function errorPlacement(error, element) { element.after(error); },
             rules: {
-                loginEmail: {
-                    required: true,
-                    email: true
+                loginText: {
+                    required: true
                 },
                 loginPassword: {
                     required: true,
-                    minlength: 5
+                    minlength: 4
                 }
             },
             messages: {
-                loginEmail: {
-                    required: "Introduce una direccion de correo electronico valida.",
-                    minlength: "Introduce una direccion de correo electronico valida."
+                loginText: {
+                    required: "Inserte un usuario correcto"
                 },
                 loginPassword: {
-                    required: "Introduce una contraseña valida.",
-                    minlength: jQuery.validator.format("Introduse al menos {0} caracteres.")
+                    required: "Inserte un password correcto",
+                    minlength: jQuery.validator.format("Como minimo {0} caracteres")
                 }
             }
         });
